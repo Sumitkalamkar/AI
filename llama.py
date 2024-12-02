@@ -1,10 +1,12 @@
 import ollama
 
+# setting up the role and comntent of ollama:
 messages = [
     {
         'role': 'system',
         'content': 'You are a guest, and the user will tell you a topic to debate on. You can debate on that topic with the user.'
     }
+    
 ]
 
 def truncate_response(response_text, max_words=50):
